@@ -14,6 +14,7 @@ import java.util.List;
 public interface OwnersRepository extends CrudRepository<Owner, Integer> {
 
 
+
     List<Owner> findByAddress_City(String address_city);
 
     List<Owner> findByAddress_RoomsAmountGreaterThan(Integer address_roomsAmount); // no completion here for Adress fields expressions
@@ -22,5 +23,5 @@ public interface OwnersRepository extends CrudRepository<Owner, Integer> {
 
     List<Owner> findByCats_BreedContains(String cats_breed); // parameter of Cat type is required incorrectly, property not suggested and not validated
 
-    Owner findFirstByCats_CatName(String name);// parameter of Cat type is required incorrectly, property not suggested and not validated
+    Owner findFirstByCats_CatName(String name); // parameter of Cat type is required incorrectly, property not suggested and not validated
 }
