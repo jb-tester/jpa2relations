@@ -49,6 +49,11 @@ public class RunMe {
         for(Cat cat: cats){
             System.out.println(cat.toString());
         }
+        System.out.println("=== check meta annotation for Query:==");
+        List<Cat> cats2 = catService.catsByBreedLikePattern("coo","red");
+        for (Cat cat:cats2){
+            System.out.println(cat.toString());
+        }
     }
 
 }

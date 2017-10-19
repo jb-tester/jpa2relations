@@ -29,4 +29,10 @@ public class CatServiceImpl implements CatService {
     public List<Cat> catsByRoomsAmountAndBreed(int amount, String breed) {
         return repository.findByOwner_Address_RoomsAmountAndBreedContaining(amount,breed);
     }
+
+    @Override
+    public List<Cat> catsByBreedLikePattern(String pattern1, String pattern2) {
+
+        return repository.findTheCatsILike(pattern1, pattern2);
+    }
 }

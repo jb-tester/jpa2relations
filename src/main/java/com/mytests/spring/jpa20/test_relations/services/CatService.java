@@ -14,4 +14,5 @@ public interface CatService {
 
     List<Cat> catsByCity(String city);
     List<Cat> catsByRoomsAmountAndBreed(int amount, String breed);
+    List<Cat> catsByBreedLikePattern(String pattern1, String pattern2);
 }
