@@ -11,10 +11,10 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import java.util.List;
 
 /**
- * *******************************
+ * *******************************************
  * Created by Irina.Petrovskaya on 10/4/2017.
  * Project: jpa2relations
- * *******************************
+ * *******************************************
  */
 public class RunMe {
     public static void main(String[] args) {
