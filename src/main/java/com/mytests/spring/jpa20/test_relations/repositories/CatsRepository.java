@@ -7,6 +7,7 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
 
 import java.util.List;
+import java.util.Set;
 
 /**
  * *******************************
@@ -23,5 +24,6 @@ public interface CatsRepository extends CrudRepository<Cat, Integer> {
 
     @MyQuery("select c from Cat c where c.breed like %:breed% and c.color like %:color_pattern%")
     List<Cat> findTheCatsILike(@Param("breed") String breed, @Param("color_pattern") String color );
-
+    
+   Set<String> findNameByBreedContains(String breed);
 }

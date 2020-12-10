@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Set;
 
 /**
  * *******************************
@@ -34,5 +35,10 @@ public class CatServiceImpl implements CatService {
     public List<Cat> catsByBreedLikePattern(String pattern1, String pattern2) {
 
         return repository.findTheCatsILike(pattern1, pattern2);
+    }
+
+    @Override
+    public Set<String> catNamesByBreed(String pattern) {
+        return repository.findNameByBreedContains(pattern);
     }
 }

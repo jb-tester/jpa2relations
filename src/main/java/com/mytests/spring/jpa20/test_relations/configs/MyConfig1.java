@@ -21,9 +21,10 @@ public class MyConfig1 {
 
         BasicDataSource ds = new BasicDataSource();
         ds.setDriverClassName("com.mysql.jdbc.Driver");
-        ds.setUrl("jdbc:mysql://unit-300:3306/jbtests");
+        ds.setUrl("jdbc:mysql://unit-300:3306/jbtests?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC");
         ds.setUsername("irina");
         ds.setPassword("jolt");
+        
         return ds;
     }
 
@@ -32,7 +33,7 @@ public class MyConfig1 {
 
         HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
         vendorAdapter.setGenerateDdl(true);
-
+        
         LocalContainerEntityManagerFactoryBean factory = new LocalContainerEntityManagerFactoryBean();
 
         factory.setJpaVendorAdapter(vendorAdapter);

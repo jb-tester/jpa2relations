@@ -9,6 +9,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import java.util.List;
+import java.util.Set;
 
 /**
  * *******************************************
@@ -52,6 +53,11 @@ public class RunMe {
         System.out.println("=== check meta annotation for Query:==");
         List<Cat> cats2 = catService.catsByBreedLikePattern("coo","red");
         for (Cat cat:cats2){
+            System.out.println(cat.toString());
+        }
+        System.out.println("=== check Set<String> return type :==");
+        Set<String> names = catService.catNamesByBreed("red");
+        for (String cat:names){
             System.out.println(cat.toString());
         }
     }

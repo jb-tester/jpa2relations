@@ -3,6 +3,7 @@ package com.mytests.spring.jpa20.test_relations.services;
 import com.mytests.spring.jpa20.test_relations.data.Cat;
 
 import java.util.List;
+import java.util.Set;
 
 /**
  * *******************************
@@ -15,4 +16,5 @@ public interface CatService {
     List<Cat> catsByCity(String city);
     List<Cat> catsByRoomsAmountAndBreed(int amount, String breed);
     List<Cat> catsByBreedLikePattern(String pattern1, String pattern2);
+    Set<String> catNamesByBreed(String pattern);
 }
