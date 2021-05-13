@@ -17,9 +17,9 @@ public interface OwnersRepository extends CrudRepository<Owner, Integer> {
 
     List<Owner> findByAddress_City(String address_city);
 
-    List<Owner> findByAddress_RoomsAmountGreaterThan(Integer address_roomsAmount); // no completion here for Adress fields expressions
+    List<Owner> findByAddress_RoomsAmountGreaterThan(Integer address_roomsAmount); // no completion here for Address fields expressions
 
-    List<Owner> findByCats_Empty();  // no parameters are necessary here
+    List<Owner> findByCats_Empty();                  // no parameters are necessary here. 'Can't resolve property Empty' error is shown
 
     List<Owner> findByCats_BreedContains(String cats_breed); // parameter of Cat type is required incorrectly, property not suggested and not validated
 
