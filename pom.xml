@@ -8,7 +8,7 @@
     <artifactId>jpa2-relations</artifactId>
     <version>1.0-SNAPSHOT</version>
     <properties>
-        <hibernate-core.version>5.2.2.Final</hibernate-core.version>
+        <hibernate-core.version>5.3.20.Final</hibernate-core.version>
         <!--<hibernate-core.version>4.2.1.Final</hibernate-core.version>-->
         <validation-api.version>1.1.0.Final</validation-api.version>
         <!-- <validation-api.version>1.0.0.GA</validation-api.version>-->
