@@ -21,7 +21,7 @@ public class MyConfig1 {
 
         BasicDataSource ds = new BasicDataSource();
         ds.setDriverClassName("com.mysql.jdbc.Driver");
-        ds.setUrl("jdbc:mysql://unit-359.labs.intellij.net:3306/jbtests?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC");
+        ds.setUrl("jdbc:mysql://localhost:3306/jbtests");
         ds.setUsername("irina");
         ds.setPassword("jolt");
         
